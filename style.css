@@ -1,0 +1,254 @@
+@font-face {
+    font-family:"Lemon-Regular";
+    src: url("font/Lemon-Regular.ttf");
+}
+@font-face {
+    font-family:"OpenSans-Bold";
+    src: url("font/OpenSans-Bold.ttf");
+}
+@font-face {
+    font-family:"OpenSans-SemiBold";
+    src: url("font/OpenSans-SemiBold.ttf");
+}
+@font-face {
+    font-family:"OpenSans-Regular";
+    src: url("font/OpenSans-Regular.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 100px;
+}
+.logo h2{
+    font-family:"Lemon-Regular";
+    font-weight: 400;
+    font-size: 32px;
+    color: #f00606;
+}
+#nav-items{
+    display: flex;
+    align-items: center;
+}
+#nav-items li{
+    font-family:"OpenSans-SemiBold";
+    font-weight: 600;
+    font-size: 18px;
+    list-style: none;
+    margin-left: 100px;
+    text-transform: capitalize;  
+    cursor: pointer;
+    color: #fff; /* Add this line to make text white */
+}
+.active{
+    color: #ee0707;
+}
+.hero-section{
+    background-image: url("img/BG2.png");
+    width: 100%;
+    height: 132vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.hero-section h1{
+    font-family:"Lemon-Regular";
+    font-weight: 400;
+    font-size: 64px;
+    width: 400px;
+    text-transform: capitalize;
+    color: #fff; /* Add this line to make text white */
+}
+span{
+    color: #fc0808;
+}
+.hero-section p{
+    font-family:"OpenSans-Regular";
+    font-weight: 400;
+    font-size: 18px;
+    width: 309px;
+    padding: 30px 0px;
+    color: #fff; /* Add this line to make text white */
+}
+.hero-section button{
+    font-family:"OpenSans-Bold";
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    width: 135px;
+    height: 65px;
+    border-radius: 50px 0px 50px 0px;
+    background-color: #ec0707;
+    border: none;
+}
+
+/* HIGHLIGHTED GAMES */
+.highlighted-games{
+    width: 100%;
+    background-color: #000000;
+    padding: 80px 140px;
+}
+.game-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    font-family:'HelveticaNowDisplay-Black';
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 72px;
+    text-align: left;
+    color: #f6f6f6;
+}
+.tag-section{
+    display: flex;
+    gap: 16px;
+}
+.tags{
+    padding: 4px 24px;
+    font-family:'HelveticaNowDisplay-Medium';
+    font-size: 16px;
+    font-weight: 500;
+    line-height:24px;
+    text-align: left;
+    color: #f6f6f6;
+    background-color: #dd1313;
+    border-radius: 20px;
+}
+.games-images{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px ;
+    gap: 40px;
+}
+.game-btn{
+    width: 260px;
+    height: 63px;
+    margin: auto;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #df0707;
+    color: #f0ebeb;
+    font-family:'HelveticaNowDisplay-Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height:30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.latest-news{
+    width: 100%;
+    background-color: #101010;
+    padding: 80px 140px;
+}
+.latest-news-sec{
+    display: flex;
+    gap: 40px;
+}
+.description-box{
+    width: 100%;
+    border-radius: 0px 0px 16px 16px;
+    padding: 24px 32px;
+    background-color: #020202;
+}
+.description-box h6{
+    font-family:'HelveticaNowDisplay-Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height:48px;
+    color: #fff;
+}
+.description-box p{
+    font-family:'HelveticaNowDisplay-Light';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #e40f0f;
+}
+.right-side-news .description-box{
+    padding: 8px 12px;
+}
+.right-side-news .description-box h6{
+    font-size: 13px;
+    line-height: 19px;
+}
+.right-side-news .description-box p{
+    font-size: 12px;
+    line-height: 18px;
+}
+.latest-news .right-side-news{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* FOOTER SECTION */
+footer{
+    width: 100%;
+    height: 240px;
+    background-color: #020202;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 140px;
+}
+.footer-left-side-section{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.copyright{
+    color: #b1b1b1;
+    font-family:'HelveticaNowDisplay-Light';
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 19px;
+}
+.footer-right-side-section .social-media{
+    display: flex;
+    gap: 32px;
+}
+.games {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the stars under the image */
+    gap: 10px;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+}
+
+.rating span {
+    color: #ffcc00; /* Classic gold color */
+    font-size: 20px;
+}
+
+/* Optional: Style for "empty" or inactive stars */
+.rating span.inactive {
+    color: #444; 
+}
+
+/* Ensure images don't break the layout */
+.games img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Matches your button's feel */
+}

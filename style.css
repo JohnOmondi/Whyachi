@@ -253,76 +253,64 @@ footer{
     border-radius: 8px; /* Matches your button's feel */
 }
 /* --- MOBILE FIXES (Add this at the very bottom) --- */
-
+/* --- MOBILE RESPONSIVENESS FIX --- */
 @media screen and (max-width: 768px) {
-    /* 1. Fix the Header/Nav */
-    header {
-        padding: 15px 20px;
-        flex-direction: column;
-        position: relative; /* Stops it from covering hero content on small screens */
-        background: #000;
+    /* 1. Reset huge desktop padding */
+    header, .hero-section, .highlighted-games, .latest-news, footer {
+        padding: 40px 20px !important;
     }
-    
+
+    /* 2. Fix the Header/Navigation */
+    header {
+        position: relative; /* Prevents it from overlapping content */
+        flex-direction: column;
+        gap: 15px;
+    }
+
     #nav-items li {
-        margin: 10px 15px;
+        margin-left: 15px;
         font-size: 14px;
     }
 
-    /* 2. Fix the Hero Section */
+    /* 3. Stack the Hero Section vertically */
     .hero-section {
         flex-direction: column;
         height: auto;
-        padding: 60px 20px;
         text-align: center;
     }
 
     .hero-section h1 {
         width: 100%;
-        font-size: 32px;
+        font-size: 36px;
     }
 
-    .hero-section p {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .hero-img img {
-        width: 80%; /* Shrinks the juice image so it doesn't overflow */
-        margin-top: 20px;
-    }
-
-    /* 3. Fix the Grid Sections (Best Selling & News) */
-    .highlighted-games, .latest-news {
-        padding: 40px 20px; /* Reduces that massive 140px side padding */
-    }
-
+    /* 4. Fix the "Best Selling" and "Latest News" horizontal rows */
     .games-images, .latest-news-sec {
-        flex-direction: column; /* Stacks items vertically */
+        flex-direction: column !important; /* Forces items to stack on top of each other */
         align-items: center;
         gap: 30px;
     }
 
-    .game-title {
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-
-    /* 4. Fix News Layout */
-    .latest-news .right-side-news {
+    .right-side-news {
         width: 100%;
     }
 
-    /* 5. Fix Footer */
+    /* 5. Ensure images fit the screen width */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* 6. Adjust Footer for small screens */
     footer {
         flex-direction: column;
         height: auto;
-        padding: 40px 20px;
-        gap: 30px;
+        gap: 20px;
         text-align: center;
     }
 
     .footer-left-side-section {
         flex-direction: column;
+        gap: 20px;
     }
 }

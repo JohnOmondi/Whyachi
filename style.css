@@ -252,3 +252,77 @@ footer{
     height: auto;
     border-radius: 8px; /* Matches your button's feel */
 }
+/* --- MOBILE FIXES (Add this at the very bottom) --- */
+
+@media screen and (max-width: 768px) {
+    /* 1. Fix the Header/Nav */
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+        position: relative; /* Stops it from covering hero content on small screens */
+        background: #000;
+    }
+    
+    #nav-items li {
+        margin: 10px 15px;
+        font-size: 14px;
+    }
+
+    /* 2. Fix the Hero Section */
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .hero-section p {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-img img {
+        width: 80%; /* Shrinks the juice image so it doesn't overflow */
+        margin-top: 20px;
+    }
+
+    /* 3. Fix the Grid Sections (Best Selling & News) */
+    .highlighted-games, .latest-news {
+        padding: 40px 20px; /* Reduces that massive 140px side padding */
+    }
+
+    .games-images, .latest-news-sec {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center;
+        gap: 30px;
+    }
+
+    .game-title {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    /* 4. Fix News Layout */
+    .latest-news .right-side-news {
+        width: 100%;
+    }
+
+    /* 5. Fix Footer */
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-left-side-section {
+        flex-direction: column;
+    }
+}
